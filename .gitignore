@@ -1,0 +1,4 @@
+.bundle/
+cookbooks/
+tmp/
+vendor/bundle

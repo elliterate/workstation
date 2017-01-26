@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+function use_local_gems() {
+  export GEM_HOME=tmp/ruby/2.0.0
+  export GEM_PATH=tmp/ruby/2.0.0
+  export PATH=${GEM_HOME}/bin:${PATH}
+}
+
+function get_dependencies() {
+  gem install bundler --no-document
+  bundle install
+}
+
+function main() {
+  use_local_gems
+  get_dependencies
+
+  case "$1" in
+    update)
+      bundle exec librarian-chef update
+      ;;
+    run)
+      shift
+      bundle exec soloist run_recipe "$1"
+      ;;
+    *)
+      bundle exec soloist
+      ;;
+  esac
+}
+
+main "$@"
