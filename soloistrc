@@ -2,3 +2,4 @@ recipes:
 
 # base
 - base
+- base::bash_it
