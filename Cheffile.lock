@@ -1,3 +1,8 @@
+SITE
+  remote: https://supermarket.getchef.com/api/v1
+  specs:
+    homebrew (3.0.0)
+
 PATH
   remote: site-cookbooks/base
   specs:
@@ -5,4 +10,5 @@ PATH
 
 DEPENDENCIES
   base (>= 0)
+  homebrew (>= 0)
 
