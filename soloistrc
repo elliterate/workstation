@@ -4,3 +4,14 @@ recipes:
 - base
 - base::bash_it
 - homebrew
+- homebrew::install_formulas
+
+node_attributes:
+  homebrew:
+    formulas:
+      - ack
+      - ag
+      - pstree
+      - tree
+      - watch
+      - wget
