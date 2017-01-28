@@ -8,8 +8,15 @@ recipes:
 
 # settings
 - osx-settings
+- osx-settings::dock_preferences
 
 node_attributes:
+  workstation:
+    dock_preferences:
+      orientation: 'bottom'
+      auto_hide: true
+      tile_size: 65
+      magnification: false
   homebrew:
     formulas:
       - ack
