@@ -12,6 +12,8 @@ recipes:
 
 node_attributes:
   workstation:
+    settings:
+      clock_format: EEE MMM d  h:mm a
     dock_preferences:
       orientation: 'bottom'
       auto_hide: true
