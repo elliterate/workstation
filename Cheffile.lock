@@ -8,7 +8,21 @@ PATH
   specs:
     base (0.0.0)
 
+PATH
+  remote: site-cookbooks/osx
+  specs:
+    osx (0.0.0)
+
+PATH
+  remote: site-cookbooks/osx-settings
+  specs:
+    osx-settings (0.0.0)
+      base (>= 0.0.0)
+      osx (>= 0.0.0)
+
 DEPENDENCIES
   base (>= 0)
   homebrew (>= 0)
+  osx (>= 0)
+  osx-settings (>= 0)
 

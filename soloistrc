@@ -6,6 +6,9 @@ recipes:
 - homebrew
 - homebrew::install_formulas
 
+# settings
+- osx-settings
+
 node_attributes:
   homebrew:
     formulas:
