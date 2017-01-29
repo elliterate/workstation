@@ -35,6 +35,12 @@ PATH
       homebrew (>= 0.0.0)
 
 PATH
+  remote: site-cookbooks/powerline
+  specs:
+    powerline (0.0.0)
+      base (>= 0.0.0)
+
+PATH
   remote: site-cookbooks/pyenv
   specs:
     pyenv (0.0.0)
@@ -80,6 +86,7 @@ DEPENDENCIES
   osx (>= 0)
   osx-settings (>= 0)
   postgresql (>= 0)
+  powerline (>= 0)
   pyenv (>= 0)
   python (>= 0)
   rbenv (>= 0)
