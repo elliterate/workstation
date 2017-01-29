@@ -28,6 +28,13 @@ PATH
       osx (>= 0.0.0)
 
 PATH
+  remote: site-cookbooks/pyenv
+  specs:
+    pyenv (0.0.0)
+      base (>= 0.0.0)
+      homebrew (>= 0.0.0)
+
+PATH
   remote: site-cookbooks/rbenv
   specs:
     rbenv (0.0.0)
@@ -47,6 +54,7 @@ DEPENDENCIES
   homebrew (>= 0)
   osx (>= 0)
   osx-settings (>= 0)
+  pyenv (>= 0)
   rbenv (>= 0)
   terminal (>= 0)
 

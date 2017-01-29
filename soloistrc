@@ -19,6 +19,9 @@ recipes:
 # development (ruby)
 - rbenv
 
+# development (python)
+- pyenv
+
 node_attributes:
   workstation:
     settings:
