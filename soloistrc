@@ -19,6 +19,7 @@ recipes:
 
 # development (web)
 - postgresql
+- python
 
 # development (ruby)
 - rbenv
