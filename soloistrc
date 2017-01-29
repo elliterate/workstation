@@ -9,6 +9,7 @@ recipes:
 # settings
 - osx-settings
 - osx-settings::dock_preferences
+- terminal
 
 node_attributes:
   workstation:
@@ -25,6 +26,8 @@ node_attributes:
       displaysleep: 10
       disksleep: 10
       sleep: 10
+    terminal:
+      default_profile: 'Pro'
   homebrew:
     formulas:
       - ack
