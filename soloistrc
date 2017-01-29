@@ -19,6 +19,12 @@ node_attributes:
       auto_hide: true
       tile_size: 65
       magnification: false
+    screensaver:
+      ask_for_password: true
+      ask_for_password_delay: 0
+      displaysleep: 10
+      disksleep: 10
+      sleep: 10
   homebrew:
     formulas:
       - ack
