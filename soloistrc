@@ -18,6 +18,7 @@ recipes:
 - git
 - git::default_editor
 - vim
+- osx-apps::iterm2
 
 # development (web)
 - postgresql

@@ -21,6 +21,13 @@ PATH
     osx (0.0.0)
 
 PATH
+  remote: site-cookbooks/osx-apps
+  specs:
+    osx-apps (0.0.0)
+      base (>= 0.0.0)
+      homebrew (>= 0.0.0)
+
+PATH
   remote: site-cookbooks/osx-settings
   specs:
     osx-settings (0.0.0)
@@ -84,6 +91,7 @@ DEPENDENCIES
   git (>= 0)
   homebrew (>= 0)
   osx (>= 0)
+  osx-apps (>= 0)
   osx-settings (>= 0)
   postgresql (>= 0)
   powerline (>= 0)
