@@ -1,5 +1,6 @@
 include_recipe 'osx-settings::set_key_repeat_preferences'
 include_recipe 'osx-settings::function_keys'
+include_recipe 'osx-settings::general_preferences'
 include_recipe 'osx-settings::inputrc'
 include_recipe 'osx-settings::keyboard'
 include_recipe 'osx-settings::locate'
