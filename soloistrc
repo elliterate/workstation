@@ -13,6 +13,7 @@ recipes:
 
 # development (general)
 - base::workspace_directory
+- git
 
 node_attributes:
   workstation:

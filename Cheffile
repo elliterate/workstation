@@ -1,6 +1,7 @@
 site 'https://supermarket.getchef.com/api/v1'
 
 cookbook 'base', path: 'site-cookbooks/base'
+cookbook 'git', path: 'site-cookbooks/git'
 cookbook 'homebrew'
 cookbook 'osx', path: 'site-cookbooks/osx'
 cookbook 'osx-settings', path: 'site-cookbooks/osx-settings'
