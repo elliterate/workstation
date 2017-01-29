@@ -22,6 +22,7 @@ recipes:
 
 # development (ruby)
 - rbenv
+- ruby
 
 # development (python)
 - pyenv

@@ -49,6 +49,12 @@ PATH
       homebrew (>= 0.0.0)
 
 PATH
+  remote: site-cookbooks/ruby
+  specs:
+    ruby (0.0.0)
+      base (>= 0.0.0)
+
+PATH
   remote: site-cookbooks/terminal
   specs:
     terminal (0.0.0)
@@ -64,5 +70,6 @@ DEPENDENCIES
   postgresql (>= 0)
   pyenv (>= 0)
   rbenv (>= 0)
+  ruby (>= 0)
   terminal (>= 0)
 
