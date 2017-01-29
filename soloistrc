@@ -16,6 +16,9 @@ recipes:
 - git
 - git::default_editor
 
+# development (web)
+- postgresql
+
 # development (ruby)
 - rbenv
 
