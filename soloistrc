@@ -16,6 +16,9 @@ recipes:
 - git
 - git::default_editor
 
+# development (ruby)
+- rbenv
+
 node_attributes:
   workstation:
     settings:
