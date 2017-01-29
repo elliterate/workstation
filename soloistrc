@@ -16,6 +16,7 @@ recipes:
 - base::workspace_directory
 - git
 - git::default_editor
+- vim
 
 # development (web)
 - postgresql
