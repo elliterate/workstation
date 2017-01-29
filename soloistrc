@@ -5,6 +5,7 @@ recipes:
 - base::bash_it
 - homebrew
 - homebrew::install_formulas
+- homebrew::install_casks
 
 # settings
 - osx-settings
@@ -51,3 +52,26 @@ node_attributes:
       - tree
       - watch
       - wget
+    casks:
+      - colloquy
+      - crashplan
+      - dropbox
+      - flux
+      - github-desktop
+      - google-chrome
+      - google-drive
+      - google-hangouts
+      - istat-menus
+      - jetbrains-toolbox
+      - macvim
+      - sizeup
+      - skype
+      - steam
+      - sublime-text
+      - superduper
+      - textmate
+      - transmission
+      - transmit
+      - vagrant
+      - virtualbox
+      - vmware-fusion
