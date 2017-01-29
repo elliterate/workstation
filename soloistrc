@@ -11,6 +11,9 @@ recipes:
 - osx-settings::dock_preferences
 - terminal
 
+# development (general)
+- base::workspace_directory
+
 node_attributes:
   workstation:
     settings:
@@ -28,6 +31,7 @@ node_attributes:
       sleep: 10
     terminal:
       default_profile: 'Pro'
+    workspace_directory: 'src'
   homebrew:
     formulas:
       - ack
