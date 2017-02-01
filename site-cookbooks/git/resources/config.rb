@@ -1,5 +1,5 @@
 property :setting_key, String, name_attribute: true
-property :setting_value, String
+property :setting_value, [String, Integer]
 property :setting_owner, String, default: node['workstation']['user']
 property :scope, is: [:system, :global], default: :global
 

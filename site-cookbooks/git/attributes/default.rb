@@ -8,6 +8,7 @@ node.default['workstation']['git']['global_config'] = {
   'color.interactive' => 'auto',
   'color.status' => 'auto',
   'color.ui' => 'auto',
+  'help.autocorrect' => -1,
   'push.default' => 'simple',
   'alias.co' => 'checkout',
   'alias.lg' => 'log --graph',
