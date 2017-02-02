@@ -48,6 +48,8 @@ node_attributes:
       sleep: 10
     terminal:
       default_profile: 'Pro'
+    text:
+      automatically_correct_spelling: false
     workspace_directory: 'src'
   homebrew:
     formulas:
