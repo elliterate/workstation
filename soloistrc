@@ -71,6 +71,7 @@ node_attributes:
       - istat-menus
       - jetbrains-toolbox
       - macvim
+      - screenhero
       - sizeup
       - skype
       - soulver
