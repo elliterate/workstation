@@ -50,6 +50,8 @@ node_attributes:
       default_profile: 'Pro'
     text:
       automatically_correct_spelling: false
+    trackpad:
+      tap_behavior: 'click'
     workspace_directory: 'src'
   homebrew:
     formulas:
