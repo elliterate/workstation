@@ -69,6 +69,7 @@ node_attributes:
       - github-desktop
       - google-chrome
       - google-drive
+      - google-play-music-desktop-player
       - google-hangouts
       - istat-menus
       - java
