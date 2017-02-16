@@ -76,6 +76,7 @@ node_attributes:
       - java
       - jetbrains-toolbox
       - macvim
+      - razer-synapse
       - screenhero
       - sizeup
       - skype
