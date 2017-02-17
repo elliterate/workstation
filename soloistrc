@@ -62,6 +62,7 @@ node_attributes:
       - watch
       - wget
     casks:
+      - adobe-air
       - colloquy
       - crashplan
       - drobo-dashboard
