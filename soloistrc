@@ -73,6 +73,7 @@ node_attributes:
       - google-drive
       - google-play-music-desktop-player
       - google-hangouts
+      - handbrake
       - istat-menus
       - java
       - jetbrains-toolbox
