@@ -57,6 +57,7 @@ node_attributes:
     formulas:
       - ack
       - ag
+      - libdvdcss
       - pstree
       - tree
       - watch
