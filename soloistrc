@@ -46,6 +46,7 @@ node_attributes:
       displaysleep: 10
       disksleep: 10
       sleep: 10
+      name: 'Flurry'
     terminal:
       default_profile: 'Pro'
     text:

@@ -21,6 +21,16 @@ domains.each do |domain|
     key 'idleTime'
     integer node['workstation']['screensaver']['timeout']
   end
+
+  osx_defaults 'set screensaver' do
+    name = node['workstation']['screensaver']['name']
+    path = "/System/Library/Screen Savers/#{name}.saver"
+
+    domain domain
+    key 'moduleDict'
+    dict 'moduleName' => name, 'path' => path, 'type' => 0
+    not_if { name.nil? || !File.exists?(path) }
+  end
 end
 
 execute 'set display, disk and computer sleep times' do
