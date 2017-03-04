@@ -2,29 +2,18 @@ require 'shellwords'
 
 action :write do
   execute "#{new_resource.description} - #{new_resource.domain} - #{new_resource.key}"  do
-    command "defaults write #{new_resource.domain} #{key} #{type_flag} #{value}"
+    command "defaults write #{new_resource.domain} #{default}"
     user node['workstation']['user']
-    not_if "defaults read #{new_resource.domain} #{new_resource.key} | grep ^#{value}$"
+    not_if "defaults read #{new_resource.domain} #{default.key} | grep ^#{default.value}$"
   end
 end
 
-def type_flag
-  return '-int' if new_resource.integer
-  return '-array' if new_resource.array
-  return '-string' if new_resource.string
-  return '-float' if new_resource.float
-  return '-boolean' unless new_resource.boolean.nil?
-  ''
-end
-
-def key
-  Shellwords.escape(new_resource.key)
-end
-
-def value
-  new_resource.integer ||
-    new_resource.string && Shellwords.escape(new_resource.string) ||
-    (new_resource.float && new_resource.float.to_f) ||
-    (new_resource.array && new_resource.array.map{|x| Shellwords.escape(x)}.join(' ')) ||
-    new_resource.boolean
+def default
+  return IntSerializer.new(new_resource.key, new_resource.integer) if new_resource.integer
+  return ArraySerializer.new(new_resource.key, new_resource.array) if new_resource.array
+  return StringSerializer.new(new_resource.key, new_resource.string) if new_resource.string
+  return FloatSerializer.new(new_resource.key, new_resource.float) if new_resource.float
+  return DictSerializer.new(new_resource.key, new_resource.dict) if new_resource.dict
+  return BooleanSerializer.new(new_resource.key, new_resource.boolean) unless new_resource.boolean.nil?
+  nil
 end

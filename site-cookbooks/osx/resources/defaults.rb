@@ -12,7 +12,6 @@ TODO List:
   -data <hex_digits>
   -date <date_rep>
   -array-add <value1> <value2> ...
-  -dict <key1> <value1> <key2> <value2> ...
   -dict-add <key1> <value1> ..
 * Should support notifies
 * Should support overrides of not_if with a more complex block
@@ -29,6 +28,7 @@ attribute :string, :kind_of => String, :default => nil
 attribute :boolean, :kind_of => [ TrueClass, FalseClass ], :default => nil
 attribute :float, :kind_of => [Float, Integer], :default => nil
 attribute :array, :kind_of => Array, :default => nil
+attribute :dict, :kind_of => Hash, :default => nil
 
 def initialize(name, run_context=nil)
   super
