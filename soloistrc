@@ -79,6 +79,7 @@ node_attributes:
       - istat-menus
       - java
       - jetbrains-toolbox
+      - little-snitch
       - macvim
       - razer-synapse
       - screenhero
