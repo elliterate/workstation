@@ -81,6 +81,7 @@ node_attributes:
       - jetbrains-toolbox
       - little-snitch
       - macvim
+      - micro-snitch
       - razer-synapse
       - screenhero
       - sizeup
