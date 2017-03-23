@@ -65,6 +65,7 @@ node_attributes:
       - wget
     casks:
       - adobe-air
+      - airfoil
       - colloquy
       - crashplan
       - drobo-dashboard
