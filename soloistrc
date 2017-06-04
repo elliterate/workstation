@@ -14,6 +14,7 @@ recipes:
 - terminal
 
 # development (general)
+- base::bin_directory
 - base::workspace_directory
 - git
 - git::default_editor
