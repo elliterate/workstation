@@ -88,7 +88,7 @@ node_attributes:
       - micro-snitch
       - mysql
       - logitech-myharmony
-      - qt5
+      - qt@5.5
       - razer-synapse
       - screenhero
       - sizeup
