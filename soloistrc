@@ -86,6 +86,7 @@ node_attributes:
       - little-snitch
       - macvim
       - micro-snitch
+      - mysql
       - logitech-myharmony
       - razer-synapse
       - screenhero
