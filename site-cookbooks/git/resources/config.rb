@@ -6,7 +6,7 @@ property :scope, is: [:system, :global], default: :global
 default_action :create
 
 action :create do
-  execute "git config --#{scope} #{setting_key} #{setting_value}" do
-    user setting_owner
+  execute "git config --#{new_resource.scope} #{new_resource.setting_key} #{new_resource.setting_value}" do
+    user new_resource.setting_owner
   end
 end
