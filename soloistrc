@@ -73,7 +73,7 @@ node_attributes:
       - drobo-dashboard
       - dropbox
       - flux
-      - github-desktop
+      - github
       - google-chrome
       - google-drive
       - google-play-music-desktop-player
