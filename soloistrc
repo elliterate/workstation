@@ -61,6 +61,7 @@ node_attributes:
       - ag
       - hg
       - libdvdcss
+      - mysql
       - pstree
       - tree
       - watch
@@ -82,7 +83,6 @@ node_attributes:
       - little-snitch
       - macvim
       - micro-snitch
-      - mysql
       - qt@5.5
       - sizeup
       - skype
