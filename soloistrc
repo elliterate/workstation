@@ -70,7 +70,6 @@ node_attributes:
       - adobe-air
       - airfoil
       - colloquy
-      - drobo-dashboard
       - dropbox
       - flux
       - github
@@ -86,9 +85,7 @@ node_attributes:
       - macvim
       - micro-snitch
       - mysql
-      - logitech-myharmony
       - qt@5.5
-      - razer-synapse
       - screenhero
       - sizeup
       - skype
