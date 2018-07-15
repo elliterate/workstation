@@ -74,8 +74,6 @@ node_attributes:
       - flux
       - github
       - google-chrome
-      - google-drive
-      - google-play-music-desktop-player
       - google-hangouts
       - handbrake
       - istat-menus
@@ -86,7 +84,6 @@ node_attributes:
       - micro-snitch
       - mysql
       - qt@5.5
-      - screenhero
       - sizeup
       - skype
       - soulver
