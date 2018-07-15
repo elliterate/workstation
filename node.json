@@ -64,9 +64,7 @@
       "textmate",
       "transmission",
       "transmit",
-      "vagrant",
-      "virtualbox",
-      "vmware-fusion"
+      "vagrant"
     ]
   },
   "recipes": [
