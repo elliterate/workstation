@@ -68,14 +68,10 @@ node_attributes:
       - wget
       - yarn
     casks:
-      - adobe-air
-      - airfoil
       - colloquy
       - dropbox
-      - flux
       - github
       - google-chrome
-      - google-hangouts
       - handbrake
       - istat-menus
       - java
@@ -83,7 +79,6 @@ node_attributes:
       - little-snitch
       - macvim
       - micro-snitch
-      - qt@5.5
       - sizeup
       - skype
       - soulver
