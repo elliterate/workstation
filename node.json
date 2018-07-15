@@ -1,0 +1,94 @@
+{
+  "workstation": {
+    "settings": {
+      "clock_format": "EEE MMM d  h:mm a"
+    },
+    "dock_preferences": {
+      "orientation": "bottom",
+      "auto_hide": true,
+      "tile_size": 65,
+      "magnification": false
+    },
+    "screensaver": {
+      "ask_for_password": true,
+      "ask_for_password_delay": 0,
+      "displaysleep": 10,
+      "disksleep": 10,
+      "sleep": 10,
+      "name": "Flurry"
+    },
+    "terminal": {
+      "default_profile": "Pro"
+    },
+    "text": {
+      "automatically_correct_spelling": false
+    },
+    "trackpad": {
+      "tap_behavior": "click"
+    },
+    "workspace_directory": "src"
+  },
+  "homebrew": {
+    "formulas": [
+      "ack",
+      "ag",
+      "hg",
+      "libdvdcss",
+      "mysql",
+      "pstree",
+      "tree",
+      "watch",
+      "wget",
+      "yarn"
+    ],
+    "casks": [
+      "colloquy",
+      "dropbox",
+      "github",
+      "google-chrome",
+      "handbrake",
+      "istat-menus",
+      "java",
+      "jetbrains-toolbox",
+      "little-snitch",
+      "macvim",
+      "micro-snitch",
+      "sizeup",
+      "skype",
+      "soulver",
+      "soundsource",
+      "steam",
+      "subler",
+      "sublime-text",
+      "superduper",
+      "textmate",
+      "transmission",
+      "transmit",
+      "vagrant",
+      "virtualbox",
+      "vmware-fusion"
+    ]
+  },
+  "recipes": [
+    "base",
+    "base::bash_it",
+    "homebrew",
+    "homebrew::install_formulas",
+    "homebrew::install_casks",
+    "osx-settings",
+    "osx-settings::dock_preferences",
+    "powerline::fonts",
+    "terminal",
+    "base::bin_directory",
+    "base::workspace_directory",
+    "git",
+    "git::default_editor",
+    "vim",
+    "osx-apps::iterm2",
+    "postgresql",
+    "python",
+    "rbenv",
+    "ruby",
+    "pyenv"
+  ]
+}

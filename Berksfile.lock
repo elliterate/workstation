@@ -1,0 +1,62 @@
+DEPENDENCIES
+  base
+    path: site-cookbooks/base
+  git
+    path: site-cookbooks/git
+  homebrew
+  osx
+    path: site-cookbooks/osx
+  osx-apps
+    path: site-cookbooks/osx-apps
+  osx-settings
+    path: site-cookbooks/osx-settings
+  postgresql
+    path: site-cookbooks/postgresql
+  powerline
+    path: site-cookbooks/powerline
+  pyenv
+    path: site-cookbooks/pyenv
+  python
+    path: site-cookbooks/python
+  rbenv
+    path: site-cookbooks/rbenv
+  ruby
+    path: site-cookbooks/ruby
+  terminal
+    path: site-cookbooks/terminal
+  vim
+    path: site-cookbooks/vim
+
+GRAPH
+  base (0.0.0)
+  git (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  homebrew (5.0.4)
+  osx (0.0.0)
+  osx-apps (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  osx-settings (0.0.0)
+    base (>= 0.0.0)
+    osx (>= 0.0.0)
+  postgresql (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  powerline (0.0.0)
+    base (>= 0.0.0)
+  pyenv (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  python (0.0.0)
+    base (>= 0.0.0)
+  rbenv (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
+  ruby (0.0.0)
+    base (>= 0.0.0)
+  terminal (0.0.0)
+    base (>= 0.0.0)
+    osx (>= 0.0.0)
+  vim (0.0.0)
+    base (>= 0.0.0)

@@ -1,4 +1,6 @@
 .bundle/
+chef_guid
 cookbooks/
+local-mode-cache/
 tmp/
 vendor/bundle
