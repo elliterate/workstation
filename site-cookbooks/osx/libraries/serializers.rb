@@ -26,7 +26,7 @@ class DefaultSerializer
   end
 
   def key
-    @key
+    Shellwords.escape(@key)
   end
 
   def type_flag
