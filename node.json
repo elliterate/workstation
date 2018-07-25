@@ -21,7 +21,11 @@
       "default_profile": "Pro"
     },
     "text": {
-      "automatically_correct_spelling": false
+      "automatically_capitalize_words": false,
+      "automatically_correct_spelling": false,
+      "automatically_substitute_dashes": false,
+      "automatically_substitute_periods": false,
+      "automatically_substitute_quotes": false
     },
     "trackpad": {
       "tap_behavior": "click"
