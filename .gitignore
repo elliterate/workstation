@@ -2,5 +2,6 @@
 chef_guid
 cookbooks/
 local-mode-cache/
+nodes/
 tmp/
 vendor/bundle
