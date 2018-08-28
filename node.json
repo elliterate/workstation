@@ -42,6 +42,8 @@
       "mysql",
       "postgresql",
       "pstree",
+      "pyenv",
+      "rbenv",
       "tree",
       "watch",
       "wget",
