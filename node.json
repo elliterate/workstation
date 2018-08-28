@@ -52,6 +52,7 @@
     "casks": [
       "chromedriver",
       "colloquy",
+      "discord",
       "dropbox",
       "github",
       "google-chrome",
