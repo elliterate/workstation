@@ -9,6 +9,7 @@ node.default['bash_it'] = {
     'base' => %w(
       bash_it/custom/aliases.bash
       bash_it/custom/colors.bash
+      bash_it/custom/editor.bash
     )
   },
   'theme' => 'powerline',
