@@ -3,6 +3,9 @@
     "settings": {
       "clock_format": "EEE MMM d  h:mm a"
     },
+    "dashboard_preferences": {
+      "state": "off"
+    },
     "dock_preferences": {
       "orientation": "bottom",
       "auto_hide": true,
@@ -87,6 +90,7 @@
     "homebrew::install_formulas",
     "homebrew::install_casks",
     "osx-settings",
+    "osx-settings::dashboard_preferences",
     "osx-settings::dock_preferences",
     "powerline::fonts",
     "terminal",
