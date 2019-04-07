@@ -43,6 +43,7 @@
       "hg",
       "libdvdcss",
       "mysql",
+      "nvm",
       "postgresql",
       "pstree",
       "pyenv",
