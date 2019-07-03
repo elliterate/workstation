@@ -11,7 +11,14 @@ osx_defaults "set tap behavior to #{prefs['tap_behavior']}" do
   only_if { prefs.keys.include?('tap_behavior') }
 end
 
-osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} trackpad click" do
+osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} built-in trackpad click" do
+  domain 'com.apple.AppleMultitouchTrackpad'
+  key 'Clicking'
+  boolean prefs['tap_behavior'] == 'click'
+  only_if { prefs.keys.include?('tap_behavior') }
+end
+
+osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} external trackpad click" do
   domain 'com.apple.driver.AppleBluetoothMultitouch.trackpad'
   key 'Clicking'
   boolean prefs['tap_behavior'] == 'click'
