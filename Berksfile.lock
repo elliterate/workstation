@@ -4,6 +4,8 @@ DEPENDENCIES
   git
     path: site-cookbooks/git
   homebrew
+  nodenv
+    path: site-cookbooks/nodenv
   osx
     path: site-cookbooks/osx
   osx-apps
@@ -33,6 +35,9 @@ GRAPH
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
   homebrew (5.0.4)
+  nodenv (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
   osx (0.0.0)
   osx-apps (0.0.0)
     base (>= 0.0.0)
