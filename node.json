@@ -39,6 +39,7 @@
     "formulas": [
       "ack",
       "ag",
+      "awscli",
       "geckodriver",
       "heroku/brew/heroku",
       "hg",
