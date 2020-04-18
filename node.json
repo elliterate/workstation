@@ -58,6 +58,7 @@
     "casks": [
       "chromedriver",
       "discord",
+      "docker",
       "dropbox",
       "github",
       "google-chrome",
