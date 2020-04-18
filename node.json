@@ -109,6 +109,7 @@
     "python",
     "rbenv",
     "ruby",
-    "pyenv"
+    "pyenv",
+    "nodenv"
   ]
 }
