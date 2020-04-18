@@ -49,6 +49,7 @@
       "nvm",
       "postgresql",
       "pstree",
+      "puma/puma/puma-dev",
       "pyenv",
       "rbenv",
       "tree",
