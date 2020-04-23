@@ -44,6 +44,7 @@
       "git",
       "heroku/brew/heroku",
       "hg",
+      "jq",
       "libdvdcss",
       "mysql",
       "nvm",
