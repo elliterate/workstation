@@ -5,4 +5,4 @@ cookbook_path File.join(root, 'cookbooks')
 json_attribs File.join(root, 'node.json')
 ohai.optional_plugins = [
   :Passwd,
-]
+] if ohai
