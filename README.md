@@ -8,5 +8,5 @@ Chef scripts for bootstrapping a macOS workstation.
 2. Run the installation script:
 
    ```sh
-   ./install.sh
+   ./install.sh role[home]
    ```

@@ -1,0 +1,66 @@
+{
+  "name": "home",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "role[base]"
+  ],
+  "override_attributes": {
+    "homebrew": {
+      "formulas": [
+        "ack",
+        "ag",
+        "awscli",
+        "geckodriver",
+        "git",
+        "heroku/brew/heroku",
+        "hg",
+        "libdvdcss",
+        "mysql",
+        "nvm",
+        "postgresql",
+        "pstree",
+        "puma/puma/puma-dev",
+        "pyenv",
+        "rbenv",
+        "tree",
+        "watch",
+        "wget",
+        "yarn"
+      ],
+      "casks": [
+        "chromedriver",
+        "discord",
+        "docker",
+        "dropbox",
+        "github",
+        "google-chrome",
+        "handbrake",
+        "istat-menus",
+        "iterm2",
+        "java",
+        "jetbrains-toolbox",
+        "little-snitch",
+        "macvim",
+        "micro-snitch",
+        "postico",
+        "screens",
+        "signal",
+        "sizeup",
+        "skype",
+        "soulver",
+        "soundsource",
+        "steam",
+        "subler",
+        "sublime-text",
+        "superduper",
+        "textmate",
+        "transmission",
+        "transmit",
+        "vagrant",
+        "visual-studio-code",
+        "zoomus"
+      ]
+    }
+  }
+}

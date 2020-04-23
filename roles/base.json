@@ -1,0 +1,70 @@
+{
+  "name": "base",
+  "chef_type": "role",
+  "default_attributes": {
+    "workstation": {
+      "settings": {
+        "clock_format": "EEE MMM d  h:mm a"
+      },
+      "dashboard_preferences": {
+        "state": "off"
+      },
+      "dock_preferences": {
+        "orientation": "bottom",
+        "auto_hide": true,
+        "tile_size": 65,
+        "magnification": false
+      },
+      "screensaver": {
+        "ask_for_password": true,
+        "ask_for_password_delay": 0,
+        "displaysleep": 10,
+        "disksleep": 10,
+        "sleep": 10,
+        "name": "Flurry"
+      },
+      "terminal": {
+        "default_profile": "Pro"
+      },
+      "text": {
+        "automatically_capitalize_words": false,
+        "automatically_correct_spelling": false,
+        "automatically_substitute_dashes": false,
+        "automatically_substitute_periods": false,
+        "automatically_substitute_quotes": false
+      },
+      "trackpad": {
+        "tap_behavior": "click"
+      },
+      "workspace_directory": "src"
+    },
+    "homebrew": {
+      "formulas": [],
+      "casks": []
+    }
+  },
+  "run_list": [
+    "base",
+    "base::bash_it",
+    "homebrew",
+    "homebrew::install_formulas",
+    "homebrew::install_casks",
+    "osx-settings",
+    "osx-settings::dashboard_preferences",
+    "osx-settings::dock_preferences",
+    "powerline::fonts",
+    "terminal",
+    "base::bin_directory",
+    "base::workspace_directory",
+    "git",
+    "git::default_editor",
+    "vim",
+    "osx-apps::iterm2",
+    "postgresql",
+    "python",
+    "rbenv",
+    "ruby",
+    "pyenv",
+    "nodenv"
+  ]
+}
