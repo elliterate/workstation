@@ -59,7 +59,6 @@
     "base::workspace_directory",
     "shell-settings",
     "git",
-    "git::default_editor",
     "vim",
     "osx-apps::iterm2",
     "postgresql",

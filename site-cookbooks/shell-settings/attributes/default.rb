@@ -1,4 +1,5 @@
 include_attribute 'base::bin_directory'
+include_attribute 'git'
 
 node.default['shell-settings'] = {
   'bash-it' => {
@@ -6,15 +7,17 @@ node.default['shell-settings'] = {
       'aliases.bash',
       'bin.bash',
       'colors.bash',
-      'editor.bash'
-  	]
+      'editor.bash',
+      'git_editor.bash'
+    ]
   },
   'oh-my-zsh' => {
     'custom_scripts' => [
       'aliases.zsh',
       'bin.zsh',
       'colors.zsh',
-      'editor.zsh'
-  	]
+      'editor.zsh',
+      'git_editor.zsh'
+    ]
   }
 }

@@ -81,6 +81,7 @@ GRAPH
   shell-settings (0.0.0)
     base (>= 0.0.0)
     bash-it (>= 0.0.0)
+    git (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
   terminal (0.0.0)
     base (>= 0.0.0)
