@@ -6,6 +6,8 @@ DEPENDENCIES
   homebrew
   nodenv
     path: site-cookbooks/nodenv
+  oh-my-zsh
+    path: site-cookbooks/oh-my-zsh
   osx
     path: site-cookbooks/osx
   osx-apps
@@ -40,6 +42,8 @@ GRAPH
   nodenv (0.0.0)
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
+  oh-my-zsh (0.0.0)
+    base (>= 0.0.0)
   osx (0.0.0)
   osx-apps (0.0.0)
     base (>= 0.0.0)
@@ -64,6 +68,7 @@ GRAPH
     base (>= 0.0.0)
   shell-settings (0.0.0)
     base (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
   terminal (0.0.0)
     base (>= 0.0.0)
     osx (>= 0.0.0)

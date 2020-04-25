@@ -26,7 +26,7 @@ end
 
 node['oh_my_zsh']['custom_scripts'].each do |cookbook_name, custom_scripts|
   custom_scripts.each do |custom_script|
-    base_oh_my_zsh_custom_script custom_script do
+    oh_my_zsh_custom_script custom_script do
       cookbook cookbook_name
     end
   end
