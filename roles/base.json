@@ -46,6 +46,7 @@
   "run_list": [
     "base",
     "base::bash_it",
+    "base::oh_my_zsh",
     "homebrew",
     "homebrew::install_formulas",
     "homebrew::install_casks",
