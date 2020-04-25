@@ -1,3 +1,3 @@
-include_recipe 'base::bash_it'
+include_recipe 'bash-it'
 
-base_bash_it_enable_feature 'completion/git'
+bash_it_enable_feature 'completion/git'

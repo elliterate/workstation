@@ -1,5 +1,5 @@
-include_recipe 'base::bash_it'
+include_recipe 'bash-it'
 
-base_bash_it_custom_plugin 'bash_it/custom/git-export_editor.bash' do
+bash_it_custom_plugin 'bash-it/custom/git-export_editor.bash' do
   variables editor: node['workstation']['git']['editor']
 end

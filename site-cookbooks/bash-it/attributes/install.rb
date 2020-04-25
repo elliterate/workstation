@@ -1,7 +1,7 @@
 include_attribute 'base::home'
 
-node.default['versions']['bash_it'] = 'HEAD'
-node.default['bash_it'] = {
+node.default['versions']['bash-it'] = 'HEAD'
+node.default['bash-it'] = {
   'enabled_plugins' => {
     'plugins' => %w(base)
   },

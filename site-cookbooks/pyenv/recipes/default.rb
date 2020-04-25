@@ -1,6 +1,6 @@
-include_recipe 'base::bash_it'
+include_recipe 'bash-it'
 include_recipe 'homebrew'
 
 package 'pyenv'
 
-base_bash_it_custom_plugin 'bash_it/custom/pyenv.bash'
+bash_it_custom_plugin 'bash-it/custom/pyenv.bash'

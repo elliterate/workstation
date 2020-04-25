@@ -45,7 +45,7 @@
   },
   "run_list": [
     "base",
-    "base::bash_it",
+    "bash-it",
     "oh-my-zsh",
     "homebrew",
     "homebrew::install_formulas",

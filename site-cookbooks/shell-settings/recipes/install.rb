@@ -1,6 +1,6 @@
 
 node['shell-settings']['bash-it']['custom_plugins'].each do |custom_plugin|
-  base_bash_it_custom_plugin "bash-it/custom/#{custom_plugin}" do
+  bash_it_custom_plugin "bash-it/custom/#{custom_plugin}" do
     cookbook 'shell-settings'
   end
 end

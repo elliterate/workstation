@@ -1,6 +1,8 @@
 DEPENDENCIES
   base
     path: site-cookbooks/base
+  bash-it
+    path: site-cookbooks/bash-it
   git
     path: site-cookbooks/git
   homebrew
@@ -35,12 +37,16 @@ DEPENDENCIES
 
 GRAPH
   base (0.0.0)
+  bash-it (0.0.0)
+    base (>= 0.0.0)
   git (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
   homebrew (5.0.4)
   nodenv (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
   oh-my-zsh (0.0.0)
     base (>= 0.0.0)
@@ -58,16 +64,19 @@ GRAPH
     base (>= 0.0.0)
   pyenv (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
   python (0.0.0)
     base (>= 0.0.0)
   rbenv (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
   ruby (0.0.0)
     base (>= 0.0.0)
   shell-settings (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
   terminal (0.0.0)
     base (>= 0.0.0)

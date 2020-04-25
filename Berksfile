@@ -1,6 +1,7 @@
 source 'https://supermarket.chef.io'
 
 cookbook 'base', path: 'site-cookbooks/base'
+cookbook 'bash-it', path: 'site-cookbooks/bash-it'
 cookbook 'git', path: 'site-cookbooks/git'
 cookbook 'homebrew'
 cookbook 'nodenv', path: 'site-cookbooks/nodenv'
