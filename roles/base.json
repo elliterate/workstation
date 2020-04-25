@@ -57,6 +57,7 @@
     "terminal",
     "base::bin_directory",
     "base::workspace_directory",
+    "shell-settings",
     "git",
     "git::default_editor",
     "vim",

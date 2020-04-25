@@ -24,6 +24,8 @@ DEPENDENCIES
     path: site-cookbooks/rbenv
   ruby
     path: site-cookbooks/ruby
+  shell-settings
+    path: site-cookbooks/shell-settings
   terminal
     path: site-cookbooks/terminal
   vim
@@ -59,6 +61,8 @@ GRAPH
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
   ruby (0.0.0)
+    base (>= 0.0.0)
+  shell-settings (0.0.0)
     base (>= 0.0.0)
   terminal (0.0.0)
     base (>= 0.0.0)
