@@ -18,8 +18,8 @@ execute "Copying oh-my-zsh's .git to #{node['oh_my_zsh']['dir']}" do
 end
 
 template node['oh_my_zsh']['zshrc_path'] do
-  source 'oh_my_zsh/zshrc.erb'
-  cookbook 'base'
+  source 'zshrc.erb'
+  cookbook 'oh-my-zsh'
   owner node['workstation']['user']
   mode '0777'
 end
