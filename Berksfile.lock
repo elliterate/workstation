@@ -30,6 +30,8 @@ DEPENDENCIES
     path: site-cookbooks/ruby
   shell-settings
     path: site-cookbooks/shell-settings
+  sublime-text
+    path: site-cookbooks/sublime-text
   terminal
     path: site-cookbooks/terminal
   vim
@@ -83,6 +85,9 @@ GRAPH
     bash-it (>= 0.0.0)
     git (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
+  sublime-text (0.0.0)
+    base (>= 0.0.0)
+    homebrew (>= 0.0.0)
   terminal (0.0.0)
     base (>= 0.0.0)
     osx (>= 0.0.0)
