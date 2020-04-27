@@ -10,6 +10,8 @@
 	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>4E1FF737-992B-4662-A775-88B1E3620DA2</string>
+	<key>HideTab</key>
+	<false/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
