@@ -48,6 +48,7 @@
     "bash-it",
     "oh-my-zsh",
     "homebrew",
+    "homebrew::install_taps",
     "homebrew::install_formulas",
     "homebrew::install_casks",
     "osx-settings",

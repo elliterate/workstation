@@ -7,6 +7,10 @@
   ],
   "override_attributes": {
     "homebrew": {
+      "taps": [
+        "heroku/brew",
+        "puma/puma"
+      ],
       "formulas": [
         "ack",
         "ag",
