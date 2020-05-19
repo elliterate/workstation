@@ -1,3 +1,4 @@
+include_recipe 'shell-settings::curlrc'
 
 node['shell-settings']['bash-it']['custom_plugins'].each do |custom_plugin|
   bash_it_custom_plugin "bash-it/custom/#{custom_plugin}" do
