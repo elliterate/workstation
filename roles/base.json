@@ -34,6 +34,7 @@
         "automatically_substitute_quotes": false
       },
       "trackpad": {
+        "swipe_navigation": false,
         "tap_behavior": "click"
       },
       "workspace_directory": "src"

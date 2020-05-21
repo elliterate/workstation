@@ -24,3 +24,10 @@ osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} externa
   boolean prefs['tap_behavior'] == 'click'
   only_if { prefs.keys.include?('tap_behavior') }
 end
+
+osx_defaults "#{prefs['swipe_navigation'] ? 'enable' : 'disable'} swipe navigation" do
+  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  key 'AppleEnableSwipeNavigateWithScrolls'
+  boolean prefs['swipe_navigation']
+  only_if { prefs.keys.include?('swipe_navigation') }
+end
