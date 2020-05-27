@@ -28,6 +28,8 @@ DEPENDENCIES
     path: site-cookbooks/rbenv
   ruby
     path: site-cookbooks/ruby
+  rust
+    path: site-cookbooks/rust
   shell-settings
     path: site-cookbooks/shell-settings
   sublime-text
@@ -80,6 +82,10 @@ GRAPH
     oh-my-zsh (>= 0.0.0)
   ruby (0.0.0)
     base (>= 0.0.0)
+  rust (0.0.0)
+    bash-it (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
   shell-settings (0.0.0)
     base (>= 0.0.0)
     bash-it (>= 0.0.0)
