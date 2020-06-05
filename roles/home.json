@@ -17,6 +17,7 @@
         "awscli",
         "geckodriver",
         "git",
+        "git-delta",
         "heroku/brew/heroku",
         "hg",
         "libdvdcss",
