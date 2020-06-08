@@ -20,6 +20,7 @@
         "git-delta",
         "heroku/brew/heroku",
         "hg",
+        "htop",
         "libdvdcss",
         "mysql",
         "nvm",
