@@ -32,6 +32,9 @@ DEPENDENCIES
     path: site-cookbooks/rust
   shell-settings
     path: site-cookbooks/shell-settings
+  ssh
+  ssh-settings
+    path: site-cookbooks/ssh-settings
   sublime-text
     path: site-cookbooks/sublime-text
   terminal
@@ -91,6 +94,10 @@ GRAPH
     bash-it (>= 0.0.0)
     git (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
+  ssh (0.10.24)
+  ssh-settings (0.0.0)
+    base (>= 0.0.0)
+    ssh (>= 0.0.0)
   sublime-text (0.0.0)
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
