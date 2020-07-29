@@ -10,6 +10,7 @@ node.default['workstation']['git']['global_config'] = {
   'color.ui' => 'auto',
   'help.autocorrect' => -1,
   'interactive.diffFilter' => '"delta --color-only"',
+  'pull.ff' => 'only',
   'push.default' => 'simple',
   'alias.co' => 'checkout',
   'alias.lg' => 'log --graph',
