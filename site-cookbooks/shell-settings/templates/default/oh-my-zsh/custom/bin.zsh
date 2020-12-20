@@ -1,1 +1,1 @@
-export PATH="$HOME/<%= @bin_directory %>:$PATH"
+export PATH="$HOME/<%= node['workstation']['bin_directory'] %>:$PATH"
