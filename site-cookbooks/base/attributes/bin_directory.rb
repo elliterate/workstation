@@ -1,1 +1,1 @@
-node.default['workstation']['bin_directory'] = 'bin'
+node.default['workstation']['bin_directory'] = '.local/bin'
