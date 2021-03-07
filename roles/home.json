@@ -35,6 +35,7 @@
         "yarn"
       ],
       "casks": [
+        "brave-browser",
         "chromedriver",
         "discord",
         "docker",
