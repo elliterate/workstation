@@ -51,7 +51,7 @@ GRAPH
     bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
-  homebrew (5.0.4)
+  homebrew (5.2.0)
   nodenv (0.0.0)
     base (>= 0.0.0)
     bash-it (>= 0.0.0)
