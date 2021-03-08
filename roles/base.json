@@ -71,6 +71,6 @@
     "ruby",
     "pyenv",
     "nodenv",
-    "go"
+    "goenv"
   ]
 }
