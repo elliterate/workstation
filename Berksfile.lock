@@ -5,6 +5,8 @@ DEPENDENCIES
     path: site-cookbooks/bash-it
   git
     path: site-cookbooks/git
+  go
+    path: site-cookbooks/go
   homebrew
   nodenv
     path: site-cookbooks/nodenv
@@ -48,6 +50,10 @@ GRAPH
     base (>= 0.0.0)
   git (0.0.0)
     base (>= 0.0.0)
+    bash-it (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
+  go (0.0.0)
     bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)

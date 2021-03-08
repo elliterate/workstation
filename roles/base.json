@@ -70,6 +70,7 @@
     "rbenv",
     "ruby",
     "pyenv",
-    "nodenv"
+    "nodenv",
+    "go"
   ]
 }

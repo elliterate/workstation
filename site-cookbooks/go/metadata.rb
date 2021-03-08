@@ -1,0 +1,5 @@
+name 'go'
+supports 'mac_os_x'
+depends 'bash-it'
+depends 'homebrew'
+depends 'oh-my-zsh'
