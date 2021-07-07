@@ -15,5 +15,6 @@ node.default['workstation']['git']['global_config'] = {
   'push.default' => 'simple',
   'alias.co' => 'checkout',
   'alias.lg' => 'log --graph',
+  'alias.recent' => 'branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"',
   'alias.st' => 'status'
 }
