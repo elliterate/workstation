@@ -8,7 +8,8 @@ node.default['shell-settings'] = {
       'bin.bash',
       'colors.bash',
       'editor.bash',
-      'git_editor.bash'
+      'git_editor.bash',
+      'history.bash',
     ]
   },
   'oh-my-zsh' => {
@@ -17,7 +18,8 @@ node.default['shell-settings'] = {
       'bin.zsh',
       'colors.zsh',
       'editor.zsh',
-      'git_editor.zsh'
+      'git_editor.zsh',
+      'history.zsh',
     ]
   }
 }
