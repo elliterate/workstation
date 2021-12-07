@@ -71,6 +71,7 @@
     "ruby",
     "pyenv",
     "nodenv",
-    "goenv"
+    "goenv",
+    "asdf"
   ]
 }

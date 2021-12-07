@@ -1,4 +1,6 @@
 DEPENDENCIES
+  asdf
+    path: site-cookbooks/asdf
   base
     path: site-cookbooks/base
   bash-it
@@ -47,6 +49,11 @@ DEPENDENCIES
     path: site-cookbooks/vim
 
 GRAPH
+  asdf (0.0.0)
+    base (>= 0.0.0)
+    bash-it (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
   base (0.0.0)
   bash-it (0.0.0)
     base (>= 0.0.0)
