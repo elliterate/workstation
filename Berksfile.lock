@@ -24,6 +24,8 @@ DEPENDENCIES
     path: site-cookbooks/osx-settings
   postgresql
     path: site-cookbooks/postgresql
+  powerlevel10k
+    path: site-cookbooks/powerlevel10k
   powerline
     path: site-cookbooks/powerline
   pyenv
@@ -89,6 +91,9 @@ GRAPH
   postgresql (0.0.0)
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
+  powerlevel10k (0.0.0)
+    base (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
   powerline (0.0.0)
     base (>= 0.0.0)
   pyenv (0.0.0)

@@ -42,6 +42,9 @@
     "homebrew": {
       "formulas": [],
       "casks": []
+    },
+    "oh-my-zsh": {
+      "theme": "powerlevel10k/powerlevel10k"
     }
   },
   "run_list": [
