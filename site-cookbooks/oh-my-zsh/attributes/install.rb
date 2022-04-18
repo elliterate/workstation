@@ -5,6 +5,6 @@ node.default['oh_my_zsh'] = {
   'custom_scripts' => {},
   'dir' => ::File.expand_path('.oh-my-zsh', node['workstation']['home']),
   'repository' => 'https://github.com/ohmyzsh/ohmyzsh',
-  'theme' => 'agnoster',
+  'theme' => 'robbyrussell',
   'zshrc_path' => ::File.expand_path('.zshrc', node['workstation']['home'])
 }

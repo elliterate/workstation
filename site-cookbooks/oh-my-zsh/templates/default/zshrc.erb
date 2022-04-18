@@ -10,10 +10,3 @@ export ZSH="<%= node['oh_my_zsh']['dir'] %>"
 ZSH_THEME="<%= node['oh_my_zsh']['theme'] %>"
 
 source "$ZSH/oh-my-zsh.sh"
-
-# Remove hostname from default prompt context.
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)%n"
-  fi
-}
