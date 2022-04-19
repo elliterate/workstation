@@ -1,7 +1,6 @@
 node.default['workstation']['git']['editor'] = 'vim'
 
 node.default['workstation']['git']['global_config'] = {
-  'blame.ignoreRevsFile' => '.git-blame-ignore-revs',
   'core.pager' => '"delta --color-only"',
   'core.excludesfile' => "#{node['workstation']['home']}/.gitignore",
   'color.branch' => 'auto',
