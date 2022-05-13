@@ -10,6 +10,7 @@ node.default['shell-settings'] = {
       'editor.bash',
       'git_editor.bash',
       'history.bash',
+      'pager.bash',
     ]
   },
   'oh-my-zsh' => {
@@ -20,6 +21,7 @@ node.default['shell-settings'] = {
       'editor.zsh',
       'git_editor.zsh',
       'history.zsh',
+      'pager.zsh',
     ]
   }
 }
