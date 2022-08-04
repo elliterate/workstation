@@ -18,6 +18,7 @@
         "geckodriver",
         "git",
         "git-delta",
+        "gum",
         "heroku/brew/heroku",
         "hg",
         "htop",
