@@ -38,6 +38,7 @@
     "CVS",
 
     // Custom
+    ".fleet",
     ".idea",
     "node_modules"
   ],
