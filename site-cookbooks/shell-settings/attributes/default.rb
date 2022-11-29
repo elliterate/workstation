@@ -21,6 +21,7 @@ node.default['shell-settings'] = {
       'editor.zsh',
       'git_editor.zsh',
       'history.zsh',
+      'keybindings.zsh',
       'pager.zsh',
     ]
   }

@@ -3,6 +3,11 @@
 # Down arrow searches history forwards
 "\e[B":history-search-forward
 
+# Alt + right arrow moves forward one word
+"\e\e[C": forward-word
+# Alt + left arrow moves back one word
+"\e\e[D": backward-word
+
 # Space expands history entries
 $if Bash
   Space: magic-space
