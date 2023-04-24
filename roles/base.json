@@ -68,6 +68,7 @@
     "sublime-text",
     "sublime-text::install_settings",
     "osx-apps::iterm2",
+    "phpenv",
     "postgresql",
     "python",
     "rbenv",

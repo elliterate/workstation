@@ -22,6 +22,8 @@ DEPENDENCIES
     path: site-cookbooks/osx-apps
   osx-settings
     path: site-cookbooks/osx-settings
+  phpenv
+    path: site-cookbooks/phpenv
   postgresql
     path: site-cookbooks/postgresql
   powerlevel10k
@@ -88,6 +90,11 @@ GRAPH
   osx-settings (0.0.0)
     base (>= 0.0.0)
     osx (>= 0.0.0)
+  phpenv (0.0.0)
+    base (>= 0.0.0)
+    bash-it (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    oh-my-zsh (>= 0.0.0)
   postgresql (0.0.0)
     base (>= 0.0.0)
     homebrew (>= 0.0.0)
