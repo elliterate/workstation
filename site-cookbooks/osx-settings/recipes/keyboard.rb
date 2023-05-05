@@ -25,6 +25,7 @@ disabled_keyboard_shortcut_xml =
   XML
 
 disabled_service_keyboard_shortcut_keys = [
+  'com.apple.Safari - Search With %WebSearchProvider@ - searchWithWebSearchProvider',
   'com.apple.Terminal - Search man Page Index in Terminal - searchManPages',
 ]
 
