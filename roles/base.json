@@ -58,6 +58,7 @@
     "osx-settings",
     "osx-settings::dashboard_preferences",
     "osx-settings::dock_preferences",
+    "monaspace::fonts",
     "powerline::fonts",
     "terminal",
     "base::bin_directory",

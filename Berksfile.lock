@@ -12,6 +12,8 @@ DEPENDENCIES
   goenv
     path: site-cookbooks/goenv
   homebrew
+  monaspace
+    path: site-cookbooks/monaspace
   nodenv
     path: site-cookbooks/nodenv
   oh-my-zsh
@@ -74,6 +76,8 @@ GRAPH
     homebrew (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
   homebrew (5.3.8)
+  monaspace (0.0.0)
+    base (>= 0.0.0)
   nodenv (0.0.0)
     base (>= 0.0.0)
     bash-it (>= 0.0.0)
