@@ -1,7 +1,12 @@
 require 'rubygems'
 require 'irb/completion'
-require 'irb/ext/save-history'
 require 'pp'
+
+begin
+  require 'irb/ext/save-history'
+rescue LoadError
+  # History-saving became a core feature in v1.7.2
+end
 
 begin
   require 'ap'
