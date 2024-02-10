@@ -1,0 +1,6 @@
+name     'jenv'
+supports 'mac_os_x'
+depends  'base'
+depends  'bash-it'
+depends  'homebrew'
+depends  'oh-my-zsh'

@@ -76,6 +76,7 @@
     "pyenv",
     "nodenv",
     "goenv",
+    "jenv",
     "asdf"
   ]
 }
