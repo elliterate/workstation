@@ -77,7 +77,7 @@ GRAPH
     bash-it (>= 0.0.0)
     homebrew (>= 0.0.0)
     oh-my-zsh (>= 0.0.0)
-  homebrew (5.3.8)
+  homebrew (5.4.8)
   jenv (0.0.0)
     base (>= 0.0.0)
     bash-it (>= 0.0.0)
