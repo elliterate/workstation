@@ -2,7 +2,7 @@
 A resource/provider to call to MacOS's plist 'defaults' command line tool.
 Syntax:
 osx_defaults "set key repeat rate" do
-  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  domain :global
   key "KeyRepeat"
   integer 2
 end
@@ -20,7 +20,7 @@ TODO List:
 actions :write
 
 attribute :description, :kind_of => String, :name_attribute => true
-attribute :domain, :kind_of => String, :default => nil
+attribute :domain, :kind_of => [String, Symbol], :default => nil
 attribute :key, :kind_of => String, :default => nil
 
 attribute :integer, :kind_of => Integer, :default => nil

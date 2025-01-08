@@ -5,7 +5,7 @@ TAP_BEHAVIOR = {
 prefs = node['workstation']['trackpad']
 
 osx_defaults "set tap behavior to #{prefs['tap_behavior']}" do
-  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  domain :global
   key "com.apple.mouse.tapBehavior"
   integer TAP_BEHAVIOR[prefs['tap_behavior']]
   only_if { prefs.keys.include?('tap_behavior') }
@@ -26,7 +26,7 @@ osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} externa
 end
 
 osx_defaults "#{prefs['swipe_navigation'] ? 'enable' : 'disable'} swipe navigation" do
-  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  domain :global
   key 'AppleEnableSwipeNavigateWithScrolls'
   boolean prefs['swipe_navigation']
   only_if { prefs.keys.include?('swipe_navigation') }

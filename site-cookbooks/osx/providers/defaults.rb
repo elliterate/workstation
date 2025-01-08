@@ -1,10 +1,13 @@
 require 'shellwords'
 
 action :write do
-  execute "#{new_resource.description} - #{new_resource.domain} - #{new_resource.key}"  do
-    command "defaults write #{new_resource.domain} #{default}"
+  domain = new_resource.domain
+  domain = 'Apple Global Domain' if domain == :global
+
+  execute "#{new_resource.description} - #{domain} - #{new_resource.key}"  do
+    command "defaults write #{Shellwords.escape(domain)} #{default}"
     user node['workstation']['user']
-    not_if "defaults read #{new_resource.domain} #{default.key} | grep ^#{default.value}$"
+    not_if "defaults read #{Shellwords.escape(domain)} #{default.key} | grep ^#{default.value}$"
   end
 end
 

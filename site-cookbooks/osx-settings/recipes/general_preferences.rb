@@ -10,14 +10,14 @@ prefs = node['workstation']['general_preferences']
 
 osx_defaults "set appearance to #{prefs['appearance']}" do
   key 'AppleAquaColorVariant'
-  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  domain :global
   integer APPEARANCES[prefs['appearance']]
   only_if { prefs['appearance'] }
 end
 
 osx_defaults "set highlight color to #{prefs['highlight_color']}" do
   key 'AppleHighlightColor'
-  domain "/Users/#{node['workstation']['user']}/Library/Preferences/.GlobalPreferences"
+  domain :global
   string HIGHLIGHT_COLORS[prefs['highlight_color']]
   only_if { prefs['highlight_color'] }
 end
