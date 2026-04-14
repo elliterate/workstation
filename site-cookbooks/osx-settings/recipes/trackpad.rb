@@ -25,6 +25,13 @@ osx_defaults "#{prefs['tap_behavior'] == 'click' ? 'enable' : 'disable'} externa
   only_if { prefs.keys.include?('tap_behavior') }
 end
 
+osx_defaults "#{prefs['scroll_zoom'] ? 'enable' : 'disable'} scroll gesture with modifier keys to zoom" do
+  domain 'com.apple.universalaccess'
+  key 'closeViewScrollWheelToggle'
+  boolean prefs['scroll_zoom']
+  only_if { prefs.keys.include?('scroll_zoom') }
+end
+
 osx_defaults "#{prefs['swipe_navigation'] ? 'enable' : 'disable'} swipe navigation" do
   domain :global
   key 'AppleEnableSwipeNavigateWithScrolls'

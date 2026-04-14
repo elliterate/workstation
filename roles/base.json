@@ -34,6 +34,7 @@
         "automatically_substitute_quotes": false
       },
       "trackpad": {
+        "scroll_zoom": true,
         "swipe_navigation": false,
         "tap_behavior": "click"
       },
