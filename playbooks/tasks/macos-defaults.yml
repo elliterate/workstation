@@ -184,6 +184,13 @@
     type: bool
     value: false
 
+- name: Don't show site color in tab bar in Safari
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: NeverUseBackgroundColorInToolbar
+    type: bool
+    value: true
+
 - name: Ask for password when screen is locked
   community.general.osx_defaults:
     domain: com.apple.screensaver
