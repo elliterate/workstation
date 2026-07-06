@@ -58,8 +58,8 @@
           - visual-studio-code
       when: ansible_facts['os_family'] == "Darwin"
 
-- name: Install repositories
-  import_playbook: install-repositories.yml
+- name: Dotfiles
+  import_playbook: dotfiles.yml
 
 - name: Configure SSH
   import_playbook: ssh-config.yml
