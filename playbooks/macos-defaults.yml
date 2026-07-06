@@ -1,6 +1,9 @@
 - name: macOS Defaults
   hosts: localhost
 
+  vars:
+    terminal_profile: Clear Dark
+
   tasks:
     - block:
       - name: Position dock on bottom of display
@@ -195,6 +198,25 @@
           key: NeverUseBackgroundColorInToolbar
           type: bool
           value: true
+
+      - name: Set default Terminal profile
+        community.general.osx_defaults:
+          domain: com.apple.Terminal
+          key: Default Window Settings
+          type: string
+          value: "{{ terminal_profile }}"
+
+      - name: Disable audible bell in Terminal
+        shell: |
+          plutil -replace "Window Settings"."{{ terminal_profile }}".Bell -integer 0 ~/Library/Preferences/com.apple.Terminal.plist
+
+      - name: Disable visual bell in Terminal
+        shell: |
+          plutil -replace "Window Settings"."{{ terminal_profile }}".VisualBell -integer 0 ~/Library/Preferences/com.apple.Terminal.plist
+
+      - name: Close window if shell exited cleanly in Terminal
+        shell: |
+          plutil -replace "Window Settings"."{{ terminal_profile }}".shellExitAction -integer 1 ~/Library/Preferences/com.apple.Terminal.plist
 
       - name: Ask for password when screen is locked
         community.general.osx_defaults:
