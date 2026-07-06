@@ -63,3 +63,6 @@
 
 - name: Configure SSH
   import_playbook: ssh-config.yml
+
+- name: Nerd Fonts
+  import_playbook: nerd-fonts.yml

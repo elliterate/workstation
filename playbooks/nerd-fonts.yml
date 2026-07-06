@@ -1,0 +1,42 @@
+- name: Nerd Fonts
+  hosts: localhost
+
+  vars:
+    family: Meslo
+    version: "3.4.0"
+    checksum: sha256:13b502ac8c2bd9d3161018064560e23cd42b175bb730780a270975265a19ad57
+
+  handlers:
+    - name: Refresh font cache
+      command: fc-cache -f "{{ font_dir }}"
+      when: ansible_facts['os_family'] == "Linux"
+
+  tasks:
+    - name: Set macOS font directory
+      set_fact:
+        font_dir: "{{ lookup('env', 'HOME') }}/Library/Fonts"
+      when: ansible_facts['os_family'] == "Darwin"
+
+    - name: Set Linux font directory
+      set_fact:
+        font_dir: "{{ lookup('env', 'HOME') }}/.local/share/fonts"
+      when: ansible_facts['os_family'] == "Linux"
+
+    - name: Create font directory
+      file:
+        path: "{{ font_dir }}"
+        state: directory
+        recurse: true
+
+    - name: Download font family
+      get_url:
+        url: "https://github.com/ryanoasis/nerd-fonts/releases/download/v{{ version }}/{{ family }}.zip"
+        checksum: "{{ checksum }}"
+        dest: "/tmp/{{ family }}.zip"
+
+    - name: Install fonts
+      unarchive:
+        src: "/tmp/{{ family }}.zip"
+        dest: "{{ font_dir }}"
+        include: "*.ttf"
+      notify: Refresh font cache
