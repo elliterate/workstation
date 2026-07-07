@@ -264,4 +264,67 @@
             "hot key code": 9
             "hot key modifier": 1835008
 
+      - name: Set left half shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: leftHalf
+          type: dict
+          value:
+            keyCode: 123 # LEFT
+            modifierFlags: 1835008 # CTRL-OPT-CMD
+
+      - name: Set right half shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: rightHalf
+          type: dict
+          value:
+            keyCode: 124 # RIGHT
+            modifierFlags: 1835008 # CTRL-OPT-CMD
+
+      - name: Set top half shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: topHalf
+          type: dict
+          value:
+            keyCode: 126 # UP
+            modifierFlags: 1835008 # CTRL-OPT-CMD
+
+      - name: Set bottom half shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: bottomHalf
+          type: dict
+          value:
+            keyCode: 125 # DOWN
+            modifierFlags: 1835008 # CTRL-OPT-CMD
+
+      - name: Set maximize shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: maximize
+          type: dict
+          value:
+            keyCode: 46 # M
+            modifierFlags: 1835008 # CTRL-OPT-CMD
+
+      - name: Set next display shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: nextDisplay
+          type: dict
+          value:
+            keyCode: 124 # RIGHT
+            modifierFlags: 786432 # CTRL-OPT
+
+      - name: Set previous display shortcut in Rectangle
+        community.general.osx_defaults:
+          domain: com.knollsoft.Rectangle
+          key: previousDisplay
+          type: dict
+          value:
+            keyCode: 123 # LEFT
+            modifierFlags: 786432 # CTRL-OPT
+
       when: ansible_facts['os_family'] == "Darwin"
