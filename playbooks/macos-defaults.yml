@@ -139,30 +139,29 @@
           type: bool
           value: false
 
-      - name: Disable some default keyboard shortcuts
-        community.general.osx_defaults:
-          domain: pbs
-          key: NSServicesStatus
-          type: dict
-          dict_mode: add
-          value:
-            # CMD-SHIFT-L
-            "com.apple.Safari - Search With %WebSearchProvider@ - searchWithWebSearchProvider": &disabled_keyboard_shortcut_xml |
+      - name: Disable conflicting default keyboard shortcuts
+        shell: |
+          read -r -d '' DISABLED_KEYBOARD_SHORTCUT_XML <<-XML
+            <dict>
+              <key>enabled_context_menu</key>
+              <false/>
+              <key>enabled_services_menu</key>
+              <false/>
+              <key>presentation_modes</key>
               <dict>
-                <key>enabled_context_menu</key>
+                <key>ContextMenu</key>
                 <false/>
-                <key>enabled_services_menu</key>
+                <key>ServicesMenu</key>
                 <false/>
-                <key>presentation_modes</key>
-                <dict>
-                  <key>ContextMenu</key>
-                  <false/>
-                  <key>ServicesMenu</key>
-                  <false/>
-                </dict>
               </dict>
-            # CMD-SHIFT-A
-            "com.apple.Terminal - Search man Page Index in Terminal - searchManPages": *disabled_keyboard_shortcut_xml
+            </dict>
+          XML
+
+          # CMD-SHIFT-L
+          defaults write pbs NSServicesStatus -dict-add "com.apple.Safari - Search With %WebSearchProvider@ - searchWithWebSearchProvider" "$DISABLED_KEYBOARD_SHORTCUT_XML"
+
+          # CMD-SHIFT-A
+          defaults write pbs NSServicesStatus -dict-add "com.apple.Terminal - Search man Page Index in Terminal - searchManPages" "$DISABLED_KEYBOARD_SHORTCUT_XML"
 
       - name: Always show tab bar in Safari
         community.general.osx_defaults:
