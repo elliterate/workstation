@@ -115,15 +115,15 @@
         community.general.osx_defaults:
           domain: com.apple.AppleMultitouchTrackpad
           key: Clicking
-          type: bool
-          value: true
+          type: int
+          value: 1
 
       - name: Enable external trackpad tap-to-click
         community.general.osx_defaults:
           domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
           key: Clicking
-          type: bool
-          value: true
+          type: int
+          value: 1
 
       - name: Enable scroll gesture with modifier keys to zoom
         community.general.osx_defaults:
