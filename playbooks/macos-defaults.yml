@@ -326,4 +326,18 @@
             keyCode: 123 # LEFT
             modifierFlags: 786432 # CTRL-OPT
 
+      - name: Dim all windows without focus in HazeOver
+        community.general.osx_defaults:
+          domain: com.pointum.hazeover
+          key: IndependentScreens
+          type: bool
+          value: false
+
+      - name: Set animation duration in HazeOver
+        community.general.osx_defaults:
+          domain: com.pointum.hazeover
+          key: Animation
+          type: float
+          value: "0.05"
+
       when: ansible_facts['os_family'] == "Darwin"
