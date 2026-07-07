@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+PLAYBOOK="${1:-playbooks/workstation.yml}"
+
 main() {
   load_venv
   run_playbook
@@ -49,7 +51,7 @@ install_bootstrap_venv() {
 }
 
 run_playbook() {
-  PYTHONUNBUFFERED=1 ansible-playbook -c local -i localhost, --ask-become-pass playbooks/workstation.yml
+  PYTHONUNBUFFERED=1 ansible-playbook -c local -i localhost, --ask-become-pass "$PLAYBOOK"
 }
 
 main
