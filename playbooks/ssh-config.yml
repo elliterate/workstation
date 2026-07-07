@@ -12,7 +12,7 @@
     - name: Create SSH config file
       file:
         path: "{{ lookup('env', 'HOME') }}/.ssh/config"
-        state: file
+        state: touch
         mode: "0600"
 
     - name: Create SSH config dropin directory
