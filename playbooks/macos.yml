@@ -91,4 +91,4 @@
       when: ansible_facts['os_family'] == "Darwin"
 
 - name: macOS Defaults
-- import_playbook: macos-defaults.yml
+  import_playbook: macos-defaults.yml
