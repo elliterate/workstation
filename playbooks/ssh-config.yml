@@ -25,3 +25,11 @@
       lineinfile:
         path: "{{ lookup('env', 'HOME') }}/.ssh/config"
         line: "Include config.d/*"
+
+    - name: Use Keychain for SSH keys
+      copy:
+        content: |
+          Host *
+            UseKeychain yes
+        dest: "{{ lookup('env', 'HOME') }}/.ssh/config.d/keychain"
+      when: ansible_facts['os_family'] == "Darwin"
