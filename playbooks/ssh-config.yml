@@ -26,6 +26,13 @@
         path: "{{ lookup('env', 'HOME') }}/.ssh/config"
         line: "Include config.d/*"
 
+    - name: Add keys to agent
+      copy:
+        content: |
+          Host *
+            AddKeysToAgent yes
+        dest: "{{ lookup('env', 'HOME') }}/.ssh/config.d/agent"
+
     - name: Use Keychain for SSH keys
       copy:
         content: |
