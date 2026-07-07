@@ -1,24 +1,55 @@
 #!/bin/bash -e
 
-if command -v python3 >/dev/null 2>&1; then
-  PYTHON=python3
-elif command -v python >/dev/null 2>&1; then
-  PYTHON=python
-else
-  echo "No python interpreter found" >&2
-  exit 1
-fi
+main() {
+  load_venv
+  run_playbook
+}
 
-VENV_DIR=".venv"
+load_venv() {
+  VENV_DIR=".venv"
 
-if [ ! -d "$VENV_DIR" ]; then
-  $PYTHON -m venv "$VENV_DIR"
+  if [ ! -d "$VENV_DIR" ]; then
+    install_venv
+  fi
+
   source "$VENV_DIR/bin/activate"
+}
+
+install_venv() {
+  load_bootstrap_venv
+  pip install uv
+  uv sync
+}
+
+load_bootstrap_venv() {
+  BOOTSTRAP_VENV_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/workstation/venv"
+
+  if [ ! -d "$BOOTSTRAP_VENV_DIR" ]; then
+    install_bootstrap_venv
+  fi
+
+  source "$BOOTSTRAP_VENV_DIR/bin/activate"
+}
+
+install_bootstrap_venv() {
+  if command -v python3 >/dev/null 2>&1; then
+    PYTHON=python3
+  elif command -v python >/dev/null 2>&1; then
+    PYTHON=python
+  else
+    echo "No python interpreter found" >&2
+    exit 1
+  fi
+
+  mkdir -p "$(dirname "$BOOTSTRAP_VENV_DIR")"
+
+  $PYTHON -m venv "$BOOTSTRAP_VENV_DIR"
+  source "$BOOTSTRAP_VENV_DIR/bin/activate"
   pip install --upgrade pip
-else
-  source "$VENV_DIR/bin/activate"
-fi
+}
 
-pip install -r requirements.txt
+run_playbook() {
+  PYTHONUNBUFFERED=1 ansible-playbook -c local -i localhost, --ask-become-pass playbooks/workstation.yml
+}
 
-PYTHONUNBUFFERED=1 ansible-playbook -c local -i localhost, --ask-become-pass playbooks/workstation.yml
+main
