@@ -205,6 +205,13 @@
           type: bool
           value: true
 
+      - name: Show full URL in smart search field in Safari
+        community.general.osx_defaults:
+          domain: com.apple.Safari
+          key: ShowFullURLInSmartSearchField
+          type: bool
+          value: true
+
       - name: Set default Terminal profile
         community.general.osx_defaults:
           domain: com.apple.Terminal
