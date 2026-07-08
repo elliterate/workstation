@@ -198,6 +198,13 @@
           type: bool
           value: true
 
+      - name: Show Developer menu in Safari
+        community.general.osx_defaults:
+          domain: com.apple.Safari
+          key: IncludeDevelopMenu
+          type: bool
+          value: true
+
       - name: Set default Terminal profile
         community.general.osx_defaults:
           domain: com.apple.Terminal
