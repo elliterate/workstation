@@ -205,6 +205,13 @@
           type: bool
           value: true
 
+      - name: Use DuckDuckGo as search provider in Safari
+        community.general.osx_defaults:
+          domain: com.apple.Safari
+          key: SearchProviderShortName
+          type: string
+          value: DuckDuckGo
+
       - name: Show full URL in smart search field in Safari
         community.general.osx_defaults:
           domain: com.apple.Safari
