@@ -1,0 +1,81 @@
+- name: macOS Homebrew
+  import_playbook: macos-homebrew.yml
+
+- name: macOS Packages
+  hosts: localhost
+
+  vars:
+    formulae:
+      - ack
+      - ansible
+      - asdf
+      - awk
+      - aws-vault
+      - awscli
+      - btop
+      - curl
+      - gh
+      - git
+      - git-delta
+      - gnu-sed
+      - gpg
+      - htop
+      - jq
+      - minikube
+      - nodenv
+      - pstree
+      - pyenv
+      - qrencode
+      - rbenv
+      - ruby-build
+      - tfenv
+      - tree
+      - uv
+      - watch
+      - wget
+      - yq
+    casks:
+      - 1password-cli
+      - brave-browser
+      - chromium
+      - docker-desktop
+      - elgato-control-center
+      - elgato-stream-deck
+      - firefox
+      - github
+      - google-chrome
+      - google-cloud-sdk
+      - google-drive
+      - hazeover
+      - iterm2
+      - jetbrains-toolbox
+      - lolgato
+      - macvim
+      - ngrok
+      - obsidian
+      - slack
+      - rectangle
+      - scroll-reverser
+      - tidal
+      - vagrant
+      - virtualbox
+      - visual-studio-code
+      - zoom
+
+  tasks:
+    - block:
+        - name: Update Homebrew
+          command: /opt/homebrew/bin/brew update
+
+        - name: Install Homebrew formulae
+          community.general.homebrew:
+            name: "{{ item }}"
+            force_formula: true
+          loop: "{{ formulae }}"
+
+        - name: Install Homebrew cask
+          community.general.homebrew_cask:
+            name: "{{ item }}"
+          loop: "{{ casks }}"
+
+      when: ansible_facts['os_family'] == "Darwin"

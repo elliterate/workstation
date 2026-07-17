@@ -1,64 +1,6 @@
 - name: macOS
   hosts: localhost
 
-  vars:
-    formulae:
-      - ack
-      - ansible
-      - asdf
-      - awk
-      - aws-vault
-      - awscli
-      - btop
-      - curl
-      - gh
-      - git
-      - git-delta
-      - gnu-sed
-      - gpg
-      - htop
-      - jq
-      - minikube
-      - nodenv
-      - pstree
-      - pyenv
-      - qrencode
-      - rbenv
-      - ruby-build
-      - tfenv
-      - tree
-      - uv
-      - watch
-      - wget
-      - yq
-    casks:
-      - 1password-cli
-      - brave-browser
-      - chromium
-      - docker-desktop
-      - elgato-control-center
-      - elgato-stream-deck
-      - firefox
-      - github
-      - google-chrome
-      - google-cloud-sdk
-      - google-drive
-      - hazeover
-      - iterm2
-      - jetbrains-toolbox
-      - lolgato
-      - macvim
-      - ngrok
-      - obsidian
-      - slack
-      - rectangle
-      - scroll-reverser
-      - tidal
-      - vagrant
-      - virtualbox
-      - visual-studio-code
-      - zoom
-
   tasks:
     - block:
         - name: Enable Touch ID PAM module
@@ -69,31 +11,14 @@
             insertbefore: "required"
             firstmatch: true
 
-        - name: Install Homebrew
-          shell: |
-            curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash -
-          args:
-            creates: /opt/homebrew/bin/brew
-
-        - name: Update Homebrew
-          command: /opt/homebrew/bin/brew update
-
-        - name: Install Homebrew formulae
-          community.general.homebrew:
-            name: "{{ item }}"
-            force_formula: true
-          loop: "{{ formulae }}"
-
-        - name: Install Homebrew cask
-          community.general.homebrew_cask:
-            name: "{{ item }}"
-          loop: "{{ casks }}"
-
         - name: Enable locate launch daemon
           become: true
           command: launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
       when: ansible_facts['os_family'] == "Darwin"
+
+- name: macOS Packages
+  import_playbook: macos-packages.yml
 
 - name: macOS Defaults
   import_playbook: macos-defaults.yml

@@ -1,0 +1,12 @@
+- name: macOS Homebrew
+  hosts: localhost
+
+  tasks:
+    - block:
+        - name: Install Homebrew
+          shell: |
+            curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash -
+          args:
+            creates: /opt/homebrew/bin/brew
+
+      when: ansible_facts['os_family'] == "Darwin"
