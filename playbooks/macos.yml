@@ -27,6 +27,7 @@
       - ruby-build
       - tfenv
       - tree
+      - uv
       - watch
       - wget
       - yq
